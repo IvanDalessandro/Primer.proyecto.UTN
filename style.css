@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Monospace;
+}
+
+/*Header style*/
+header{
+    background-color: #f8f9fa;
+}
+
+header img{
+    border-radius: 50%;
+}
+
+.btn.btn-outline-success{
+    background-color: #f8f9fa;
+    color: black;
+    border-color: black;
+}
+
+.btn.btn-outline-success:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+/*Contenido del section*/
+section{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+/*Contenido proyectos*/
+.cont-proyectos{
+    background-color: white;
+    min-height: 100px;
+    padding: 20px;
+}
+
+.cont-proyectos h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 40px;
+}
+
+.cont-google{
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cont-google-card{
+    background-color: #f0ebe3;
+    width: 350px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 3px 5px 33px -16px rgba(0,0,0,0.75);
+}
+
+.cont-button button{
+    background-color: #f0ebe3;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/*Contenido contacto*/
+.cont-contacto{
+    background-color: #f2f2f2;
+    min-height: 60vh;
+    padding: 40px;
+    min-height: 30px;
+}
+
+.cont-contacto h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.cont-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-form form{
+    width: 500px;
+    padding-top: 20px;
+}
+
+.btn.btn-primary{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px solid black;
+    border-color: black;
+}
+
+.btn.btn-primary:hover{
+    background-color: gray;
+    border-color: grey;
+}
+
+/*Contenido footer*/
+.cont-footer{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 30px;
+    color: gray;
+}
+
+.cont-footer h3{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.cont-footer div{
+    width: 250px;
+    display: grid;
+    justify-content: center;
+}
+
+.cont-footer a{
+    color: grey;
+}
+
+.cont-copyright{
+    background-color: #ebeced;
+    text-align: center;
+    padding: 20px;
+    color: gray;
+}
+
+.cont-copyright a{
+    color: grey;
+}
+
+/*Responsive desing Tablet*/
+@media (max-width: 990px){
+    .contenedor {
+        text-align: center;
+    }
+    .cont-google, .cont-footer{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cont-form{
+        text-align: left;
+    }
+}
+
+/*Responsive desing Celulares*/
+@media (max-width: 480px){
+    .contenedor {
+        text-align: center;
+    }
+    .cont-google, .cont-footer{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .cont-form{
+        text-align: left;
+
+    }
+
+}
